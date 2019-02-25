@@ -19,13 +19,13 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! I'm a group manager bot maintained by [this wonderful person](tg://user?id={}).
-I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick \
-[here](github.com/skittles9823/SkittBot)! and the original source [here](github.com/PaulSonOfLars/tgbot)!
+Hey {}, I'm {}! I'm a group manager bot maintained by [this dude](tg://user?id={}).
+I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find our fork \
+[here](github.com/ElDainosor/ShishuBot2) and you'll see i'm based on [Skittbot](https://github.com/skittles9823/SkittBot) and [Marie](github.com/PaulSonOfLars/tgbot)!
 
 You can find the list of available commands with /help.
 
-If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
+If you're enjoying using this bot, please hit /donate to support us or even Skittles, the guy who spiced this bot!
 """
 
 HELP_STRINGS = """
@@ -46,12 +46,13 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """Oh hoi, glad to hear you want to donate to [Skittles](tg://user?id=427673272). Every donation helps \
-All the donation money will go to hosting me, and keeping Skittles online \
-He doesnt have a job right now, so every little bit helps!
-[PayPal](paypal.me/Skittles2398).
-
-If you wish to donate to [Paul](tg://user?id=254318997), the lovely person who made the original source for this bot you can either donate to his [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Hey, thanks for considering donating! This bot is fully intended to help \
+Bootleggers ROM, so, if you want to support our project you can \
+[donate to the lead dev](paypal.me/eldainosor) as we can get some upgrades in the future \
+like, get a VPS or something to improve our ROM. Check our [donation site](BootleggersROM.github.io/donate) for more info.\n\n\
+Or also, consider donate to [Skittles](tg://user?id=427673272), who did this beautiful piece of meme bot. \
+That will help him to continuing hosting his original bot! \n\n \
+Or even consider to donate to [Paul](tg://user?id=254318997), the guy who did incredible helpful bots like Marie and Rose! You can do it on his [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
