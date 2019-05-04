@@ -16,7 +16,7 @@ def device(bot: Bot, update: Update):
     data = json.loads(url.read().decode())
 
   message = update.effective_message
-  text = message.text[len('/device '):].strip()
+  text = message.text[len('/device '):].strip().lower()
   try:
     deviceinfo = data[text]
   except: 
